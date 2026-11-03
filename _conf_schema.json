@@ -1,0 +1,12 @@
+{
+  "api_key": {"description": "PUBG API Key", "type": "string", "default": "", "secret": true, "hint": "从 https://developer.pubg.com/ 创建应用获取。填写后重载插件；不要把 Key 发到群内。"},
+  "enabled": {"description": "开启自动监控", "type": "bool", "default": true},
+  "poll_seconds": {"description": "轮询间隔（秒）", "type": "int", "default": 60, "hint": "最小 30 秒；接口自身有更新延迟。玩家查询每批最多 10 人，请求间隔至少 6.5 秒。"},
+  "allowed_group_ids": {"description": "允许使用的 QQ 群号", "type": "list", "default": [], "hint": "留空允许所有群。填写字符串群号，例如 123456789。"},
+  "allow_group_admin": {"description": "允许群主和群管理员管理订阅", "type": "bool", "default": true, "hint": "关闭后仅 AstrBot 管理员能添加、删除和测试战报。"},
+  "max_players_per_group": {"description": "每群最多监控人数", "type": "int", "default": 50},
+  "max_age_hours": {"description": "最长补发时间（小时）", "type": "int", "default": 6, "hint": "忽略早于该时间的对局；发送失败的图片在该时限内重试。范围 1 至 72 小时。"},
+  "include_custom_matches": {"description": "包含自定义房间", "type": "bool", "default": false, "hint": "仅接受标准单排/双排/四排（TPP/FPP）；训练、团队竞技等不会播报。"},
+  "proxy": {"description": "PUBG HTTP 代理", "type": "string", "default": "", "secret": true, "hint": "可填 http://服务器地址:端口；留空使用环境变量或直连。填写后重载插件。"},
+  "font_path": {"description": "自定义中文字体路径（可选）", "type": "string", "default": "", "hint": "默认使用插件自带的 Noto Sans SC 字体，不需另行安装字体。"}
+}

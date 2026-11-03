@@ -1,0 +1,9 @@
+name: astrbot_plugin_pubg_chicken
+display_name: PUBG 吃鸡战报
+desc: 监控 Steam PUBG 玩家，吃鸡后自动向 QQ 群发送黑金风格的冠军全队图片战报。
+version: v1.0.0
+author: Local
+repo: https://github.com/fhkfds/astrbot_plugin_pubg_chicken
+support_platforms:
+  - aiocqhttp
+astrbot_version: ">=4.9.2,<5"
